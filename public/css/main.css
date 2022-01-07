@@ -1,0 +1,35 @@
+:root {
+    --main-green:  #32A041;
+    --main-red: #FF1F26;
+    --fade-white:  #F1F1F1;
+
+    --triangle-size: 45px;
+    /*Tamanho das fonte padrão: 16px - 100% - 1rem*/
+    font-size: 60%; /* controle das medidas rem*/
+}
+/*propriedade padrao no css*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+html, 
+body{
+    height: 100vh; /*height = altura*/
+}
+
+.triangulo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: var(--triangle-size) solid transparent;
+    border-top: var(--triangle-size) solid;    
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 62.5%;
+    }
+}

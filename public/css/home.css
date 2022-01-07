@@ -1,0 +1,202 @@
+#left-content {
+
+	/*--border-distance-triangle:  -22x;*/
+	--border-distance-triangle:  calc( ( var(--triangle-size) / -2 ) + 1px);
+    --angle-rotate-triangle:  225deg;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: space-between;
+
+	color: var(--fade-white);
+	background-color: var(--main-green);
+
+	margin-bottom: calc(var(--border-distance-triangle) * -1 + 5px);
+	/*height: 60vh;*/
+}
+
+#left-content #title{
+	font-family: "Alfa Slab One";
+	font-size: 6.8rem;
+	line-height: 7rem;
+	font-weight: normal;
+
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+#left-content #title .first-letter-title{
+	color: var(--main-red);
+}
+
+#left-content .divider-content{
+	--size:  1.6rem;
+	
+	border-radius: 50%;
+
+	height: var(--size);
+	width: var(--size);
+
+	background-color: var(--main-red);
+}
+
+#left-content p{
+	font-family: Ubuntu;
+	font-size: 1.6rem;
+	font-weight: bold;
+	
+	text-align: center;
+	padding: 6rem 0;
+}
+
+#left-content #top-side-triangulo{
+	right: 24px;
+	bottom: var(--border-distance-triangle);
+	transform: rotate(var(--angle-rotate-triangle));
+
+	border-top-color: var(--main-green);
+}
+
+#left-content #bottom-side-triangulo{
+	left: 24px;
+	bottom: var(--border-distance-triangle);
+	transform: rotate(var(--angle-rotate-triangle));
+
+	border-top-color: var(--main-green);
+
+}
+
+#main-content{
+	display: flex;
+	flex-direction: column;
+
+	padding: 0 1.6rem;
+	padding-top: 3rem;
+}
+
+#main-content #title-form {
+	padding-bottom: 2rem;
+}
+
+#main-content #title-form h2{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.2rem;
+	line-height: 28px;
+}
+
+#main-content #title-form span{
+	font-family: Poppins;
+	font-size: 1.6rem;
+	font-weight: 600;
+
+	padding-left: 1.2rem;
+
+	color: #AAA;
+}
+
+#main-content #subscription-form{
+	display: flex;
+	flex-direction: column;
+}
+
+#main-content #subscription-form #period-input .simple-input{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+#main-content #subscription-form #period-input .simple-input div{ 
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+
+#main-content #subscription-form #submit-button{
+	width: 15rem;
+	height: 3.6rem;
+	margin: 6rem auto;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.2rem;
+
+	border: none;
+
+	background: #32A041;
+	border-radius: 0.4rem;
+
+	color: var(--fade-white);
+}
+
+#main-content #subscription-form .input-container{
+	margin-bottom: 2.6rem;
+}
+
+#main-content #subscription-form .input-container .label-input{
+	font-family: Open Sans;
+	font-size: 1.7rem;
+	font-weight: 600;
+
+	margin-left: 0.8rem;
+}
+
+#main-content #subscription-form .input-container .box-input{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	border-radius: 0.6rem;
+	box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+
+	padding: 0 0.8rem;
+
+	height: 4rem;
+}
+
+#main-content #subscription-form .input-container .simple-input{
+	margin-top: 13px;
+}
+
+#main-content #subscription-form .input-container .input-element{
+	width: 100%;
+	margin-left: 0.6rem;
+	padding-left: 0.6rem;
+
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	/*line-height: 2.2rem;*/
+}
+
+#main-content #subscription-form .input-container .icon-input{
+	color: var(--main-red);
+	font-size: 3.2rem;
+}
+
+#footer-page{
+	width: 100%;
+	/*min-height: 47px;*/
+	padding: 1.6rem 0 ;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 16px;
+
+	background-color: var(--main-green);
+	color: var(--fade-white);
+}
+#footer-page p {
+	text-align: center;
+	margin:  0 3.5rem;
+}
