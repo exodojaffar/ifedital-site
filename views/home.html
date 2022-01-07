@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@600;700&family=Poppins:wght@600&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/css/desktop.css">
+
+	<title>IF Edital - Inscreva-se</title>
+</head>
+<body id="page">
+
+	<header id="left-content">
+		<h1 id="title">
+			<span class="first-letter-title">I</span>F
+			<br>
+			<span class="first-letter-title">E</span>dital
+		</h1>
+
+		<span class="divider-content"></span>
+
+		<p>Para você que quer se manter atualizado
+			sobre os editais de uma das melhores instituições
+			de Campo Grande 
+		</p>
+
+		<span class="triangulo" id="top-side-triangulo"></span>
+		<span class="triangulo" id="bottom-side-triangulo"></span>
+	</header>
+
+	<section id="main-content">
+		<header id="title-form">
+			<h2>Cadastre-se Já</h2>
+			<span>Adicione seu email a lista!</span>
+		</header>
+		
+		<form id="subscription-form">
+			<div id="mail-input" class="input-container">
+				<label for="mail" class="label-input">E-mail</label>
+				<div class="simple-input box-input">
+					<span class="icon-input material-icons">email</span>
+					<input class="input-element" placeholder="email@example.com" id="mail" name="mail" type="email" required>
+				</div>
+			</div>
+
+			<div id="period-input" class="input-container">
+				<p class="label-input">Periodicidade</p>
+				<div class="simple-input">
+					<div>
+						<input id='diario' type="radio" value='1' name="period" checked required>
+						<label for="diario">Diariamente</label>	
+					</div>
+
+					<div>
+						<input id="semanal" type="radio" value='7' name="period" required>
+						<label for="semanal">Semanalmente</label>	
+					</div>
+
+					<div>
+						<input id="quinzenalmente" type="radio" value='15' name="period" required>
+						<label for="quinzenalmente">Quinzenalmente</label>	
+					</div>
+				</div>
+			</div>
+
+			<div id="notify-input" class="input-container">
+				<label for="notify" class="label-input">Notificações</label>
+				<div class="simple-input box-input">
+					<span class="icon-input material-icons">notifications</span>
+					<select class="input-element" name="notify" id="notify" required>
+						<option value="0" selected>Tudo</option>
+						<option value="1">Quando tiver mudanças/atualizações no edital</option>
+					</select>
+				</div>
+			</div>
+
+			<button id="submit-button">Enviar</button>
+		</form>
+	</section>
+
+	<footer id="footer-page">
+		<p>© 2021-2022 Exodo Jaffar, Henrique Claranhan e Maike Silva</p>
+	</footer>
+
+</body>
+</html>
