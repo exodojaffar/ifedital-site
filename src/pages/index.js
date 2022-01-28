@@ -1,4 +1,6 @@
-import path from 'path';
+const path = require ('path');
+
+const { cadastroValidate } = require ('../utils/validate.js');
 
 async function home(req, res){
 	var options = {
@@ -10,23 +12,33 @@ async function home(req, res){
 }
 
 async function addUserToSub(req, res) {
-	
+
 	const {
 		mail,
 		period,
 		notify
 	} = req.body;
 
-	console.table({
-		mail,
-		period,
-		notify
-	})
+	try{
+
+		await cadastroValidate.validate({
+			mail,
+			period,
+			notify
+		})
+
+	}catch(err){
+		console.log(err.errors)
+		return res.status(400).json({error: err.errors})	
+
+	}
+
 
 	return res.sendStatus(200)
+	
 }
 
-export {
+module.exports = {
 	home,
 	addUserToSub
 }

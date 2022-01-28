@@ -1,6 +1,6 @@
-import express from 'express';
+const express = require ('express');
 
-import { home, addUserToSub } from './src/pages/index.js'
+const { home, addUserToSub } = require('./src/pages');
 
 const port = process.env.PORT || 3000;
 const app = express();
