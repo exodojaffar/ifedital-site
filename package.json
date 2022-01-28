@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "web site for subscription",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/exodojaffar/ifedital-site#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "yup": "^0.32.11"
   }
 }
