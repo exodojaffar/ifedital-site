@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 
 async function home(req, res){
 	var options = {
@@ -12,15 +12,21 @@ async function home(req, res){
 async function addUserToSub(req, res) {
 	
 	const {
-		email,
-		when,
+		mail,
 		period,
-		code
-	} = req.query;
+		notify
+	} = req.body;
 
-	
+	console.table({
+		mail,
+		period,
+		notify
+	})
+
+	return res.sendStatus(200)
 }
 
-module.exports = {
-	home
+export {
+	home,
+	addUserToSub
 }
