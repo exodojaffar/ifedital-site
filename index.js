@@ -1,19 +1,18 @@
-const express = require('express');
+import express from 'express';
 
-const { 
-	home
-	} = require('./src/pages');
-
+import { home, addUserToSub } from './src/pages/index.js'
 
 const port = process.env.PORT || 3000;
 const app = express();
 
 // Define uses
 app.use(express.static('public'))
+app.use(express.json());
 
 // Define routes
 app
 .get('/', home)
+.post('/cadastro', addUserToSub)
 
 
 // Start server
