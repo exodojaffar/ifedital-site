@@ -37,6 +37,13 @@ function enviarCadastro(event) {
 			"Content-Type": "application/json"
 		},
 		body: JSON.stringify(formValues)
+	}).then( async (response) => {
+		if(!response.okay){
+			const {error} = await response.json()
+			return alert(error[0])
+		}
+
+		return alert("Cadastro feito com sucesso!")
 	})
 }
 
