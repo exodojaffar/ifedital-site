@@ -1,0 +1,74 @@
+@media (min-width:  1080px){
+	:root{
+		font-size: 80%;
+	}
+
+	#page{
+		display: flex;
+		flex-direction: row;
+
+		--left-side-width:  48vw;
+		--right-side-width:  calc( 100vw - var(--left-side-width) );
+	}
+
+	#left-content{
+		height: 100vh;
+		width: var(--left-side-width);
+		justify-content: space-around;
+
+		margin-bottom:  0;
+
+	    --angle-rotate-triangle:  135deg;
+	}
+
+	#left-content p{
+		padding-right: 2rem;
+	}
+
+	#left-content #top-side-triangulo{
+		top: 24px;
+		right: var(--border-distance-triangle);
+		transform: rotate(var(--angle-rotate-triangle));
+	}
+
+	#left-content #bottom-side-triangulo{
+		left: inherit;
+		bottom: 24px;
+		right: var(--border-distance-triangle);
+		transform: rotate(var(--angle-rotate-triangle));
+	}
+
+	#main-content{
+		align-items: center;
+		width: var(--right-side-width);
+		height: 100vh;
+
+		justify-content: space-around;
+	}
+
+	#main-content #title-form{
+		padding-bottom: 0;
+	}
+
+	#main-content #title-form h2{
+		padding-bottom: 0;
+		font-size: 4.6rem;
+	}
+
+	#main-content #title-form span{
+		display: none;
+	}
+
+	#main-content #subscription-form #submit-button{
+		margin-bottom: 0;
+		margin-top: 1.6rem;
+	}
+
+	#footer-page{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		width: var(--left-side-width);
+	}
+}
