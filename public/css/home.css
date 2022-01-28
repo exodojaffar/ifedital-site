@@ -132,6 +132,7 @@
 	border-radius: 0.4rem;
 
 	color: var(--fade-white);
+	cursor: pointer;
 }
 
 #main-content #subscription-form .input-container{
